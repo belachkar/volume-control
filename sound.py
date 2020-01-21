@@ -211,20 +211,20 @@ if __name__ == "__main__":
             print("\nIncrement the master volume")
             ev.VolumeStepUp()
             show_vol(ev)
-            time.sleep(.5) # To feel the impast
+            time.sleep(0.5)  # To feel the impact
             print("\nDecrement the master volume twice")
             ev.VolumeStepDown()
             ev.VolumeStepDown()
             show_vol(ev)
-            time.sleep(.5)  # To feel the impast
+            time.sleep(0.5)  # To feel the impact
             print("\nSet the master volume to 0.75 scalar")
             ev.SetMasterVolumeLevelScalar(0.75)
             show_vol(ev)
-            time.sleep(.5)  # To feel the impast
+            time.sleep(0.5)  # To feel the impact
             print("\nSet the master volume to 0.25 scalar")
             ev.SetMasterVolumeLevelScalar(0.25)
             show_vol(ev)
-            time.sleep(.5)  # To feel the impast
+            time.sleep(0.5)  # To feel the impact
         finally:
             ev.SetMasterVolumeLevelScalar(vol)
 
